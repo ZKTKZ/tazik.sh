@@ -6,5 +6,5 @@ theme = "hugo-theme-console"
 
 [params]
   [[params.navlinks]]
-  name = "posts/"
+  name = "posts"
   url = "posts/"
