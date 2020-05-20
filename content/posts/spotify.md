@@ -10,7 +10,7 @@ The free version of Spotify Mobile is rather limited -- one has restricted acces
 Spotify Mobile only allows tracks to be played as part of a larger playlist of songs. I made a playlist with just one track, to see how Shuffle Play would deal with it. Spotify automatically added “suggested songs” to my playlist. [1] 
 I made 14 duplicates of the same song and added them to the playlist. This was about as successful as you would expect. Spotify might allow you to add duplicates as separate track in a playlist, but they are not considered distinct tracks. This makes sense from a API design perspective. 
 (The # of tracks that Spotify adds is constant, not a ratio -- i.e., regardless of how many times you duplicate a song, the number of automatically added songs will remain the same.)
-
+![spotify_1.png](/spotify/spotify_cloning.png)
 
 ## Web API: 💻📲
 The Web / PC versions of Spotify do allow playlists with single tracks; but when one switches to the mobile app, this is overridden.
