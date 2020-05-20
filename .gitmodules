@@ -3,4 +3,4 @@
 	url = https://github.com/dashdashzako/hugo-journal.git
 [submodule "themes/hugo-theme-console"]
 	path = themes/hugo-theme-console
-	url = https://github.com/mrmierzejewski/hugo-theme-console/
+	url = https://github.com/ZKTKZ/hugo-theme-console.git
