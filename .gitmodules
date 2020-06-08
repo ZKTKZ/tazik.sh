@@ -4,3 +4,6 @@
 [submodule "themes/hugo-theme-console"]
 	path = themes/hugo-theme-console
 	url = https://github.com/ZKTKZ/hugo-theme-console.git
+[submodule "themes/hugo-vitae"]
+	path = themes/hugo-vitae
+	url = https://github.com/datacobra/hugo-vitae.git

@@ -1,8 +1,10 @@
-# baseURL = "https://peaceful-lamport-4f7c91.netlify.com/"
-baseURL = "/"
+baseurl = "https://example.com/"
+#baseURL = "https://peaceful-lamport-4f7c91.netlify.com/"
+#baseURL = "/"
 languageCode = "en-us"
 title = "Tazikistan"
 theme = "hugo-theme-console"
+#theme = "hugo-vitae"
 
 [params]
   [[params.navlinks]]
