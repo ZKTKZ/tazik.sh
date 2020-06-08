@@ -1,5 +1,5 @@
-baseurl = "https://example.com/"
-#baseURL = "https://peaceful-lamport-4f7c91.netlify.com/"
+#baseurl = "https://example.com/"
+baseURL = "https://peaceful-lamport-4f7c91.netlify.com/"
 #baseURL = "/"
 languageCode = "en-us"
 title = "Tazikistan"
