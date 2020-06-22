@@ -1,5 +1,5 @@
 +++
-title = "📌 Google Account Switching Trick" 
+title = "HOW-TO: Switch Google Accounts Faster " 
 date = "2020-04-02"
 +++
 
@@ -9,10 +9,8 @@ Fortunately, there is a simpler way to switch accounts [1]. The account id is em
 
  ![url.png](/google/url.png)
 
-In general, Google sites seem to use the the GET / POST param `authuser=n` to store the account id. However, as depicted in the screenshot above, there is a more compact syntax for some GSites.
-
-
-It seems GProducts with their own subdomain offer the more compact syntax. This is not the case for sites which are google.com but have no associated subdomain e.g. Search, Maps. YouTube does not  use the `authuser=n` param at all.
+In general, Google sites seem to use the the GET / POST param `authuser=n` to store the account id. However, as depicted in the screenshot above, there is a more compact syntax for some domains.
+It seems products with their own subdomain offer the more compact syntax. This is not the case for sites which are google.com but have no associated subdomain e.g. Search, Maps. YouTube does not  use the `authuser=n` param at all.
 
 A non-comprehensive list:
 - https://docs.google.com/spreadsheets/u/n
