@@ -1,6 +1,6 @@
-#baseurl = "https://example.com/"
-baseURL = "https://peaceful-lamport-4f7c91.netlify.com/"
+#baseURL = "https://peaceful-lamport-4f7c91.netlify.com/"
 #baseURL = "/"
+baseURL = "https://zktkz.github.io/"
 languageCode = "en-us"
 title = "Nichijournal"
 theme = "hugo-theme-console"
