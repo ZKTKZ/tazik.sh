@@ -12,9 +12,17 @@ I made 14 duplicates of the same song and added them to the playlist. This was a
 
 ![spotify_1.png](/spotify/spotify_cloning.png)
 
-## Web API: 
+## Spotify Connect 
+
+Fortunately, Spotify themselves offer a feature which vastly improves the mobile user experience: Spotify Connect!. You play your music on the PC, but control it from your phone -- retaining all the functionality of Desktop  while also sporting the flexibility of mobile.
+There are some limitations to this approach, however.
+
+1. the fact that I am limited by the range of bluetooth from my laptop to my headphones. It seems AirPlay would have solved this for me if I had a Mac computer, but I'm sure there are other solutions as well. Real time audio streaming comes to [mind](https://www.reddit.com/r/iphone/comments/1asox1/any_app_to_stream_realtime_sound_from_pc_to_iphone/). This isn't a common use case  for me though, so my *real* concern is 
+2. advertisements. More on this later.
+
+## API: 
 The Web / PC versions of Spotify do allow playlists with single tracks; but when one switches to the mobile app, this is overridden.
-I wanted to try playing a track on mobile, and switching to the Desktop version just before it ends. A cursory look at the Spotify Web API suggested that this could be done programmatically: I could use the current song length to determine the right instance to switch devices, and setting the playing device using the device  ID. [2]
+I wanted to try playing a track on mobile, and switching to the Desktop version just before it ends. A cursory look at the Spotify Web API suggested that this could be done programmatically: I could use the current song length to determine the right instance to switch devices, and set the playing device using the device  ID. [2]
 
 I used the interactive REST snippet on the Spotify page -- generating the necessary OAuth token -- and executed the GET request using <curl> from the command line. My iPad and Laptop were detected, but my iPhone was not. (It seems the iPad version is more like the Desktop / Web than the iPhone version.)
 My initial guess was that you can only interface with the iPhone player using the iOS specific SDK. But a look at the Web API documentation revealed that "Smartphone" is a distinct Device type. My updated was guess that smartphones are only detected for Premium subscribers.
@@ -24,16 +32,8 @@ Alas, it seems that I won't be able to execute any fun device switching tricks.
 ![spotify_4.png](/spotify/spotify_docs_e.png)
 
 
-I toyed with using the Web API to mute my player when an ad begins playing, as there are [no real](http://jmeyers44.github.io/blog/2015/04/26/builder-beware-the-limitations-of-popular-apis/) [rate limits](https://stackoverflow.com/questions/46322838/any-ideas-about-rate-limit-request-minute-on-spotify-api/46348692) on the REST API. Unfortunately, it seems that only Premium users can set the volume programmatically (a fact which the documentation does not [explicitly mention](https://developer.spotify.com/console/put-volume/). From what I can tell, all the Player API queries are restricted to Premium users)
+I toyed with using the Web API to mute my player when an ad begins playing, as there are [no real](http://jmeyers44.github.io/blog/2015/04/26/builder-beware-the-limitations-of-popular-apis/) [rate limits](https://stackoverflow.com/questions/46322838/any-ideas-about-rate-limit-request-minute-on-spotify-api/46348692) on the REST API. Unfortunately, it seems that only Premium users can set the volume programmatically (a fact which the documentation does not [explicitly mention](https://developer.spotify.com/console/put-volume/)). From what I can tell, all the Player API queries are restricted to Premium users.
 
-
-## Spotify Connect 
-
-Fortunately, Spotify themselves offer a feature which vastly improves the mobile user experience: Spotify Connect!. You play your music on the PC, but control it from your phone -- retaining all the functionality of Desktop  while also sporting the flexibility of mobile.
-There are some limitations to this approach, however.
-
-1. the fact that I am limited by the range of bluetooth from my laptop to my headphones. It seems AirPlay would have solved this for me if I had a Mac computer, but I'm sure there are other solutions as well. Real time audio streaming comes to [mind](https://www.reddit.com/r/iphone/comments/1asox1/any_app_to_stream_realtime_sound_from_pc_to_iphone/). This isn't a common use case  for me though, so my *real* concern is 
-2. advertisements. More on this later.
 
 ### References 
 

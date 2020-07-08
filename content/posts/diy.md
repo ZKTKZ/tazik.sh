@@ -1,8 +1,9 @@
 +++
 title = "🔨 DIY"  
-date = "-"
+date = "2020-05-05"
 +++
 
+*An assorted list of ordinary life improvements I've implemented.*
 ### ⏰ DIY Light Alarm
 (Fig. 1) Pulley for blinds attached to the nightstand. This contraption is meant to make it easier to wake up in the morning. I initially tried using a mop as the supporting pole; but reemplacing it every time the floor needed to be sweeped was too much of a hassle, so I ended up abandoning it. 
 
