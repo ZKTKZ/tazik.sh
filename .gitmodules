@@ -7,3 +7,6 @@
 [submodule "themes/hugo-vitae"]
 	path = themes/hugo-vitae
 	url = https://github.com/datacobra/hugo-vitae.git
+[submodule "ZKTKZ.github.io"]
+	path = ZKTKZ.github.io
+	url = https://github.com/ZKTKZ/ZKTKZ.github.io
