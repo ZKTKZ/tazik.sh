@@ -1,7 +1,7 @@
 #baseURL = "https://peaceful-lamport-4f7c91.netlify.com/"
 baseURL = "https://zktkz.github.io/"
 languageCode = "en-us"
-title = "Nichijournal"
+title = "tazik.sh"
 theme = "hugo-theme-console"
 #theme = "hugo-vitae"
 
